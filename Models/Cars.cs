@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StationExam.Models.Essentials;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +10,15 @@ namespace StationExam.Models
     public class Cars
     {
         public int Id { get; set; }
-        public int ModelId { get; set; }
-        public int UserId { get; set; }
+        public CarModels Model { get; set; }
+        public Users User { get; set; }
         public string VRN { get; set; }
 
-        public Cars(int id, string vrn, int modelId, int userId)
+        public Cars(int id, string vrn, CarModels model, Users user)
         {
             Id = id;
-            ModelId = modelId;
-            UserId = userId;
+            Model = model;
+            User = user;
             VRN = vrn;
         }
     }

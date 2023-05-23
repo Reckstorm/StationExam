@@ -3,24 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StationExam.Models.Essentials;
 
 namespace StationExam.Models
 {
-    internal class Users
+    public class Users
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int RoleId { get; set; }
-        public int LoginId { get; set; }
-        public int PasswordId { get; set; }
+        public string Role { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
 
-        public Users(int id, string name, int roleId, int loginId, int passwordId)
+        public Users()
+        {
+            Id = 0;
+            Name = string.Empty;
+            Role = string.Empty;
+            Login = string.Empty;
+            Password = string.Empty;
+        }
+        public Users(int id, string name, string role, string login, string password)
         {
             Id = id;
             Name = name;
-            RoleId = roleId;
-            LoginId = loginId;
-            PasswordId = passwordId;
+            Role = role;
+            Login = login;
+            Password = password;
         }
     }
 }

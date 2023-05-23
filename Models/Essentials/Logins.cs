@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StationExam.Models
+namespace StationExam.Models.Essentials
 {
-    internal class Specialities
+    public class Logins
     {
         public int Id { get; set; }
-        public string Speciality { get; set; }
+        public string Login { get; set; }
 
-        public Specialities(int id, string speciality)
+        public Logins(int id, string login)
         {
             Id = id;
-            Speciality = speciality;
+            Login = login;
         }
 
         public override string ToString()
         {
-            return $"{Speciality}";
+            return $"{Login}";
         }
     }
 }

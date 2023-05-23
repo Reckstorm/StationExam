@@ -9,19 +9,19 @@ namespace StationExam.Models
     public class Orders
     {
         public int Id { get; set; }
-        public int ServiceId { get; set; }
-        public int PartId { get; set; }
-        public int CarId { get; set; }
-        public int EmployeeId { get; set; }
+        public Services Service { get; set; }
+        public Parts Part { get; set; }
+        public Cars Car { get; set; }
+        public Users Employee { get; set; }
         public DateTime DateTime { get; set; }
 
-        public Orders(int id, int serviceId, int partId, int carId, int employeeId, DateTime dateTime)
+        public Orders(int id, Services service, Parts part, Cars car, Users employee, DateTime dateTime)
         {
             Id = id;
-            ServiceId = serviceId;
-            PartId = partId;
-            CarId = carId;
-            EmployeeId = employeeId;
+            Service = service;
+            Part = part;
+            Car = car;
+            Employee = employee;
             DateTime = dateTime;
         }
     }

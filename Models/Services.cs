@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StationExam.Models.Essentials;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +11,14 @@ namespace StationExam.Models
     {
         public int Id { get; set; }
         public string Service { get; set; }
-        public string SpecialityId { get; set; }
+        public Specialities Speciality { get; set; }
         public float Price { get; set; }
 
-        public Services(int id, string service, string specialityId, float price)
+        public Services(int id, string service, Specialities speciality, float price)
         {
             Id = id;
             Service = service;
-            SpecialityId = specialityId;
+            Speciality = speciality;
             Price = price;
         }
 

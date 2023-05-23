@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StationExam.Models.Essentials;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,14 @@ namespace StationExam.Models
     public class EmployeeSpecialities
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
-        public int SpecialityId { get; set; }
+        public Users User { get; set; }
+        public Specialities Speciality { get; set; }
 
-        public EmployeeSpecialities(int id, int userId, int specialityId)
+        public EmployeeSpecialities(int id, Users user, Specialities speciality)
         {
             Id = id;
-            UserId = userId;
-            SpecialityId = specialityId;
+            User = user;
+            Speciality = speciality;
         }
     }
 }

@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StationExam.Models
+namespace StationExam.Models.Essentials
 {
-    public class Passwords
+    public class Roles
     {
         public int Id { get; set; }
-        public string Password { get; set; }
+        public string Role { get; set; }
 
-        public Passwords(int id, string password)
+        public Roles(int id, string role)
         {
             Id = id;
-            Password = password;
+            Role = role;
         }
 
         public override string ToString()
         {
-            return $"Password";
+            return $"{Role}";
         }
     }
 }
