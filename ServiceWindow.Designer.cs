@@ -35,7 +35,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1404, 712);
+            ClientSize = new Size(1202, 712);
             Name = "ServiceWindow";
             Text = "Form1";
             ResumeLayout(false);

@@ -150,6 +150,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
             Controls.Add(Err_lb);
             Controls.Add(Role_cb);
             Controls.Add(Delete);
@@ -163,7 +164,7 @@
             Controls.Add(Name_lb);
             Controls.Add(Id_lb);
             Name = "UserItem";
-            Size = new Size(917, 114);
+            Size = new Size(920, 114);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -180,7 +181,7 @@
         private Label Password_lb;
         private Button Delete;
         private Button Save;
-        private ComboBox Role_cb;
+        public ComboBox Role_cb;
         private Label Err_lb;
     }
 }

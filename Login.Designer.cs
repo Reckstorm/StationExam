@@ -42,7 +42,7 @@
             // 
             PasswordErr_lb.AutoSize = true;
             PasswordErr_lb.ForeColor = Color.Red;
-            PasswordErr_lb.Location = new Point(808, 318);
+            PasswordErr_lb.Location = new Point(734, 333);
             PasswordErr_lb.Name = "PasswordErr_lb";
             PasswordErr_lb.Size = new Size(0, 20);
             PasswordErr_lb.TabIndex = 15;
@@ -51,14 +51,14 @@
             // 
             LoginErr_lb.AutoSize = true;
             LoginErr_lb.ForeColor = Color.Red;
-            LoginErr_lb.Location = new Point(808, 285);
+            LoginErr_lb.Location = new Point(734, 300);
             LoginErr_lb.Name = "LoginErr_lb";
             LoginErr_lb.Size = new Size(0, 20);
             LoginErr_lb.TabIndex = 14;
             // 
             // Exit_btn
             // 
-            Exit_btn.Location = new Point(591, 363);
+            Exit_btn.Location = new Point(517, 378);
             Exit_btn.Name = "Exit_btn";
             Exit_btn.Size = new Size(94, 29);
             Exit_btn.TabIndex = 13;
@@ -68,7 +68,7 @@
             // 
             // Password_tb
             // 
-            Password_tb.Location = new Point(677, 315);
+            Password_tb.Location = new Point(603, 330);
             Password_tb.Name = "Password_tb";
             Password_tb.PasswordChar = '*';
             Password_tb.Size = new Size(125, 27);
@@ -76,14 +76,14 @@
             // 
             // Login_tb
             // 
-            Login_tb.Location = new Point(677, 282);
+            Login_tb.Location = new Point(603, 297);
             Login_tb.Name = "Login_tb";
             Login_tb.Size = new Size(125, 27);
             Login_tb.TabIndex = 11;
             // 
             // Login_btn
             // 
-            Login_btn.Location = new Point(708, 363);
+            Login_btn.Location = new Point(634, 378);
             Login_btn.Name = "Login_btn";
             Login_btn.Size = new Size(94, 29);
             Login_btn.TabIndex = 10;
@@ -95,7 +95,7 @@
             // 
             Password_lb.AutoSize = true;
             Password_lb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            Password_lb.Location = new Point(591, 318);
+            Password_lb.Location = new Point(517, 333);
             Password_lb.Name = "Password_lb";
             Password_lb.Size = new Size(80, 20);
             Password_lb.TabIndex = 9;
@@ -105,7 +105,7 @@
             // 
             Login_lb.AutoSize = true;
             Login_lb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            Login_lb.Location = new Point(591, 285);
+            Login_lb.Location = new Point(517, 300);
             Login_lb.Name = "Login_lb";
             Login_lb.Size = new Size(52, 20);
             Login_lb.TabIndex = 8;
@@ -124,7 +124,7 @@
             Controls.Add(Password_lb);
             Controls.Add(Login_lb);
             Name = "Login";
-            Size = new Size(1400, 760);
+            Size = new Size(1220, 760);
             ResumeLayout(false);
             PerformLayout();
         }

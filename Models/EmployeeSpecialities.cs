@@ -9,15 +9,23 @@ namespace StationExam.Models
 {
     public class EmployeeSpecialities
     {
-        public int Id { get; set; }
-        public Users User { get; set; }
-        public Specialities Speciality { get; set; }
+        public int UserID { get; set; }
+        public string Speciality { get; set; }
 
-        public EmployeeSpecialities(int id, Users user, Specialities speciality)
+        public EmployeeSpecialities()
         {
-            Id = id;
-            User = user;
+            UserID = 0;
+            Speciality = string.Empty;
+        }
+        public EmployeeSpecialities(string speciality, int userId)
+        {
+            UserID = userId;
             Speciality = speciality;
+        }
+
+        public override string ToString() 
+        { 
+            return Speciality;
         }
     }
 }
