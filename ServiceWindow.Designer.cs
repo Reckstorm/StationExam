@@ -1,6 +1,6 @@
 ﻿namespace StationExam
 {
-    partial class Form1
+    partial class ServiceWindow
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // ServiceWindow
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoSize = true;
+            BackColor = Color.Gainsboro;
+            ClientSize = new Size(1225, 712);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "ServiceWindow";
+            Text = "Station";
+            ResumeLayout(false);
         }
 
         #endregion
