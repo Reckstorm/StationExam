@@ -35,9 +35,12 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1202, 712);
+            AutoSize = true;
+            BackColor = Color.Gainsboro;
+            ClientSize = new Size(1225, 712);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "ServiceWindow";
-            Text = "Form1";
+            Text = "Station";
             ResumeLayout(false);
         }
 

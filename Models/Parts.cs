@@ -10,11 +10,19 @@ namespace StationExam.Models
     public class Parts
     {
         public int Id { get; set; }
-        public CarModels Model { get; set; }
+        public string Model { get; set; }
         public string Part { get; set; }
         public float Price { get; set; }
 
-        public Parts(int id, CarModels model, string part, float price)
+        public Parts()
+        {
+            Id = 0;
+            Model = string.Empty;
+            Part = string.Empty;
+            Price = 0;
+        }
+
+        public Parts(int id, string part, float price, string model)
         {
             Id = id;
             Model = model;
@@ -24,7 +32,7 @@ namespace StationExam.Models
 
         public override string ToString()
         {
-            return $"{Part}";
+            return $"{Part} {Price}";
         }
     }
 }

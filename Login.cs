@@ -29,7 +29,7 @@ namespace StationExam
         {
             ServiceWindow parent = this.Parent as ServiceWindow;
             int index = parent.users.FindIndex(x => x.Login.Equals(this.Login_tb.Text));
-            if (index < 0 || !parent.users[index].Password.Equals(this.Password_tb.Text))
+            if (index < 0 || !parent.users[index].Password.Equals(this.Password_tb.Text) || parent.users[index].Role.Equals(parent.roles[1].Role))
             {
                 this.LoginErr_lb.Text = "Error";
                 this.PasswordErr_lb.Text = "Error";

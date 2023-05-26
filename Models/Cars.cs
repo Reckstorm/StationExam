@@ -29,5 +29,10 @@ namespace StationExam.Models
             UserId = user;
             VRN = vrn;
         }
+
+        public override string ToString()
+        {
+            return VRN;
+        }
     }
 }
